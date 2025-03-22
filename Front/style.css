@@ -43,7 +43,7 @@ p{
     color:white;
     
 }
- input{
+input{
     width: 70%;
     height:30px;
     background: transparent;
@@ -52,7 +52,7 @@ p{
     font-size:18px;
     border-bottom:solid 3px white;
 }
- input::placeholder{
+input::placeholder{
     color:white;
     opacity: 0.5;
 }
@@ -90,6 +90,7 @@ button:active{
     animation: floating 2s infinite;
     border:none;
     outline:none;
+    pointer-events: none;;
 }
 .fa-gear
 {
@@ -100,6 +101,26 @@ button:active{
     animation: floating 2s infinite;
     border:none;
     outline:none;
+    pointer-events: none;;
+}
+@media screen and (max-width:1300px) {
+    *{
+        word-break:keep-all
+    }
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .fa-gear{
+        color:transparent;
+    }
+    .card
+    {
+
+    }
+    .fa-hammer{
+        color:transparent;
+    }
 }
 @keyframes floating {
     0%{margin-bottom: 0px;}
