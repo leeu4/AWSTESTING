@@ -68,10 +68,6 @@ input::placeholder{
     color:white;
     opacity: 0.5;
 }
-button
-{
-    color:black;
-}
 .inputes,.help_inputes
 {
     display:flex;
@@ -90,10 +86,15 @@ button
     border-radius: 5px;
     cursor:pointer;
     transition:0.2s;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 button:active{
     scale:0.90;
 }
+
 .fa-hammer{
     color:#575757;
     position:absolute;
@@ -116,25 +117,7 @@ button:active{
     pointer-events: none;;
 }
 
-@media screen and (max-width:1300px) {
-    *{
-        word-break:keep-all
-    }
-    body{
-        display: flex;
-        justify-content: center;
-    }
-    .fa-gear{
-        color:transparent;
-    }
-    .card
-    {
 
-    }
-    .fa-hammer{
-        color:transparent;
-    }
-}
 
 .foot{
     background-color:darkorange;
@@ -148,13 +131,3 @@ button:active{
 {
     margin-bottom: 15px;
 }
-@keyframes rotating {
-    0%{transform:rotate(0deg);}
-    100%{transform: rotate(360deg);}
-}
-@keyframes hit {
-    0%   { transform: rotate(0deg); }
-    50%  { transform: rotate(-45deg); }
-    75% { transform: rotate(10deg); }
-    100%{transform: rotate(0deg);}
-  }
